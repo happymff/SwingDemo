@@ -95,6 +95,8 @@ public class TestForDB extends JFrame implements ActionListener {
         }
         if (jb == button2) {
             textField1.setText("");
+            textField2.setText("");
+            textField3.setText("");
         }
 
     }
