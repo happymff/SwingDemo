@@ -71,9 +71,9 @@ public class SwingComponent {
     JPopupMenu pop = new JPopupMenu();
     ButtonGroup flavorGroup = new ButtonGroup();
     //创建5个单选按钮，用于设定程序的外观风格
-    JRadioButtonMenuItem metalItem = new JRadioButtonMenuItem("Metal风格", true);
+    JRadioButtonMenuItem metalItem = new JRadioButtonMenuItem("Metal风格");
     JRadioButtonMenuItem nimbusItem = new JRadioButtonMenuItem("Nimbus风格");
-    JRadioButtonMenuItem windowsItem = new JRadioButtonMenuItem("windows风格");
+    JRadioButtonMenuItem windowsItem = new JRadioButtonMenuItem("windows风格",true);
     JRadioButtonMenuItem motifyItem = new JRadioButtonMenuItem("motifyItem风格");
     JRadioButtonMenuItem classicItem = new JRadioButtonMenuItem("windows经典风格");
 
@@ -207,7 +207,7 @@ public class SwingComponent {
                 UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
                 break;
             case 2:
-                UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimusLoolAndFeel");
+                UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
                 break;
             case 3:
                 UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
